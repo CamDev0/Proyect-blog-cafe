@@ -239,22 +239,61 @@ img {
     border-bottom: 0;
 }
 
-.widget-curso__price {
+.widget-curso__price,
+.curso__label {
     font-family: var(--fontHeading);
     font-weight: bold;
 }
 
-.widget-curso__info {
+.widget-curso__info,
+.curso__info {
     font-weight: normal;
 }
 
 .widget-curso__info, 
-.widget-curso__price {
+.widget-curso__price,
+.curso__info,
+.curso__label {
     font-size: 2rem;
 }
+
+/*Footer*/
 
 .footer {
     background-color: var(--black);
     padding: 3rem 0;
     margin-top: 4rem;
+}
+
+/*About*/
+
+@media (min-width: 768px) { 
+    .about {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+    }
+}
+
+/*cursos*/
+
+.curso {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--white-light);
+}
+
+@media (min-width: 768px) { 
+    .curso {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+    }
+}
+
+.curso:last-of-type {
+    border: none;
+}
+
+.curso__context {
+    padding: 4rem 0 0 1rem;
 }
