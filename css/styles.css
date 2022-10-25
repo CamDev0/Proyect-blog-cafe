@@ -37,6 +37,7 @@ a {
 
 h1, h2, h3, h4 {
     font-family: var(--fontHeading);
+    line-height: 1.2;
 }
 
 h1 { font-size: 4.8rem; }
@@ -74,6 +75,7 @@ img {
     .header {
          position: sticky;
          top: 0;
+         padding: 5px;
      }
 } 
 
@@ -134,8 +136,8 @@ img {
     .nav {
         display: flex;
         justify-content: space-between;
-        gap: 2.5rem;
-        padding-bottom: 0;
+        gap: 3.5rem;
+        padding: 0;
     }
 }
 
@@ -201,4 +203,58 @@ img {
 .btn--primary:hover {
     opacity: 0.95;
     transform: scale(1.0010);
+}
+
+
+/*cursos*/
+
+.sidebar__line {
+    border-left: 1px solid var(--white-light);
+}
+
+.sidebar h3 {
+    padding-left: 10px;
+}
+
+.btn--secundary {
+    background-color: var(--black);
+}
+
+.btn--secundary:hover {
+    opacity: 0.95;
+    transform: scale(1.0010);
+}
+
+.cursos {
+    list-style: none;
+}
+
+.widget-curso {
+    border-bottom: 1px solid var(--white-light);
+    margin-bottom: 2rem;
+}
+
+.widget-curso:last-of-type {
+    border: none;
+    border-bottom: 0;
+}
+
+.widget-curso__price {
+    font-family: var(--fontHeading);
+    font-weight: bold;
+}
+
+.widget-curso__info {
+    font-weight: normal;
+}
+
+.widget-curso__info, 
+.widget-curso__price {
+    font-size: 2rem;
+}
+
+.footer {
+    background-color: var(--black);
+    padding: 3rem 0;
+    margin-top: 4rem;
 }
