@@ -79,8 +79,15 @@ img {
      }
 } 
 
-.img-banner {
+.webp .img-banner {
     background-image: url(../img/banner.webp);
+}
+
+.no-webp .img-banner {
+    background-image: url(../img/banner.jpg);
+}
+
+.img-banner {
     height: 60rem;
     background-size: cover; /*Adapta la imagen al tamaño de pantalla*/
     background-repeat: no-repeat;
