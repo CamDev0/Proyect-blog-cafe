@@ -322,6 +322,19 @@ img {
     box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.09);
 }
 
+.error {
+    background-color: rgb(185, 0, 0);
+    padding: 1rem .5rem;
+    text-align: center;
+    color: var(--white-light);
+}
+.correcto {
+    background-color: rgb(74, 185, 0);
+    padding: 1rem .5rem;
+    text-align: center;
+    color: var(--white-light);
+}
+
 .campo {
     display: flex;
     margin-bottom: 10px;
